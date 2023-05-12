@@ -17,11 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-        runs-on: ubuntu-latest-16.04
+    
 
       - name: Set up Python version
         uses: actions/setup-python@v1
-        runs-on: ubuntu-latest-16.04
+        
         with:
           python-version: '3.8'
 
@@ -37,7 +37,7 @@ jobs:
       
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
-        runs-on: ubuntu-latest-16.04
+        
         with:
           name: python-app
           path: |
